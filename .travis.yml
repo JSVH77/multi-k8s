@@ -8,7 +8,7 @@ before_install:
 
 script: 
   - docker run -e CI=true handzel/react-test npm test -- --coverage
-  - docker run -e CI=true handzel/server_test npm test  
+  - docker run -e CI=true handzel/server-test npm test  
 
 after_success:
   - docker build -t handzel/multi-client ./client
