@@ -14,3 +14,15 @@ describe('Unit testing the / route', function() {
     });
 
 });
+
+/*describe('Unit testing the /values/all route', function() {
+
+    it('should return OK status', function() {
+      return request(app)
+        .get('/values/all')
+        .then(function(response){
+            assert.equal(response.status, 200)
+        })
+    });
+
+}); */
