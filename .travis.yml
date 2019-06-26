@@ -16,7 +16,7 @@ after_success:
   - docker build -t handzel/multi-server ./server
   - docker build -t handzel/multi-worker ./worker
   #Log in to the docker CLI
-  - echo "$DOCKER_PASSWORD" | docker login - u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take above images and push to docker hub
   - docker push handzel/multi-client
   - docker push handzel/multi-nginx
