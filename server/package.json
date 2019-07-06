@@ -5,10 +5,15 @@
     "redis": "2.8.0",
     "cors": "2.8.4",
     "nodemon": "1.18.3",
-    "body-parser": "*"
+    "body-parser": "*",
+    "mocha": "6.1.4",
+    "chai" : "4.2.0",
+    "supertest":"4.0.2",
+    "nyc": "14.1.1"
   },
   "scripts": {
     "dev": "nodemon",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha --exit" 
   }
 }
