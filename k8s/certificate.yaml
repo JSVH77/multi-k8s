@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: handzelewicz-com-tls
+spec:
+  secretName: handzelewicz-com
+  issuerRef: 
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: handzelewicz.com
+  dnsNames:
+    - handzelewicz.com
+    - www.handzelewicz.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - handzelewicz.com
+          - www.handzelewicz.com
