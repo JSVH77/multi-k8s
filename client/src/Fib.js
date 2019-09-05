@@ -53,7 +53,11 @@ class Fib extends Component {
   }
 
   render() {
-    
+    return (
+      <div>
+        Milo nam Was poznac
+      </div>
+    );
   }
 }
 
