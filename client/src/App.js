@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">DEVOPS HEllO WORLD EXAMPLE</h1>
+            <h1 className="App-title">DEVOPS HELLO WORLD EXAMPLE</h1>
             <Link to="/">Home</Link>
             <Link to="/otherpage">Other Page</Link>
           </header>
